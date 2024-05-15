@@ -1,32 +1,64 @@
-# Medicare-Fraud-Detection
+# Medicare Fraud Detection System
 
 ## Overview
-This project involves analyzing Medicare claims data to gain insights into healthcare utilization patterns, reimbursement amounts, and patient demographics. The dataset includes information on both inpatient and outpatient claims, as well as beneficiary demographics.
+This project aims to develop a Medicare Fraud Detection System using PySpark. The system analyzes Medicare claims data to identify potentially fraudulent activities using machine learning techniques.
+
+## Table of Contents
+- [Project Structure](#project-structure)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Results](#results)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Project Structure
-- **Data**: Contains the datasets used for analysis.
-  - `inpatient_data.csv`: Dataset containing information about inpatient claims.
-  - `outpatient_data.csv`: Dataset containing information about outpatient claims.
-  - `beneficiary_data.csv`: Dataset containing demographic information about beneficiaries.
-- **Analysis**: Contains scripts and notebooks used for data analysis.
-  - `data_preprocessing.ipynb`: Jupyter notebook for data cleaning and preprocessing.
-  - `data_analysis.ipynb`: Jupyter notebook for exploratory data analysis.
-- **Visualizations**: Contains visualizations generated from the analysis.
-  - `inpatient_analysis_visuals.png`: Visualizations related to inpatient claims analysis.
-  - `outpatient_analysis_visuals.png`: Visualizations related to outpatient claims analysis.
-- **Reports**: Contains reports summarizing the findings of the analysis.
-  - `medicare_claims_analysis_report.pdf`: Detailed report outlining the analysis methodology and results.
+The project is divided into two main parts:
 
-## Getting Started
-To run the analysis locally, follow these steps:
-1. Clone this repository to your local machine.
-2. Install the required dependencies listed in `requirements.txt`.
-3. Run the Jupyter notebooks in the `Analysis` folder in sequential order.
+1. **Data Preprocessing:**
+   - In this part, the Medicare claims data is loaded into a PySpark DataFrame.
+   - Data cleaning, preprocessing, and feature engineering are performed.
+   - Missing values are imputed, and categorical variables are encoded.
+   - Exploratory Data Analysis (EDA) is conducted to understand the data distribution and correlations.
+   
+2. **Model Building and Evaluation:**
+   - A logistic regression model is built using PySpark's machine learning library.
+   - The model is trained on the preprocessed data to predict fraudulent Medicare claims.
+   - Evaluation metrics such as Area Under ROC Curve and accuracy are calculated.
+   - An example data point is used to demonstrate model predictions.
 
-## Dependencies
-- Python 3
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- Jupyter Notebook
+## Requirements
+- Python 3.x
+- PySpark
+- Pandas
+- Matplotlib
+- Seaborn
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your_username/medicare-fraud-detection.git
+   ```
+2. Install the required dependencies:
+   ```bash
+   pip install pyspark pandas matplotlib seaborn
+   ```
+
+## Usage
+1. **Data Preprocessing:**
+   - Open `data_preprocessing.ipynb` in Jupyter Notebook or any compatible environment.
+   - Execute the cells to preprocess the Medicare claims data.
+   - Explore the data and visualize distributions and correlations.
+   
+2. **Model Building and Evaluation:**
+   - Open `model_building.ipynb` in Jupyter Notebook or any compatible environment.
+   - Execute the cells to build and evaluate the logistic regression model.
+   - Adjust model parameters and threshold values as needed.
+
+## Results
+- The Medicare Fraud Detection System achieves high performance with an Area Under ROC Curve of 1.0000 and an accuracy of 0.9984 on the test data.
+- The logistic regression model effectively identifies potentially fraudulent Medicare claims.
+
+## Contributing
+Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
+
