@@ -10,7 +10,6 @@ This project aims to develop a Medicare Fraud Detection System using PySpark. Th
 - [Usage](#usage)
 - [Results](#results)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Project Structure
 The project is divided into two main parts:
@@ -26,6 +25,11 @@ The project is divided into two main parts:
    - The model is trained on the preprocessed data to predict fraudulent Medicare claims.
    - Evaluation metrics such as Area Under ROC Curve and accuracy are calculated.
    - An example data point is used to demonstrate model predictions.
+
+3. **Visualization and Reporting (Power BI):**
+   -The results from the data preprocessing and model evaluation are visualized using Power BI.
+   -Interactive dashboards and visualizations are created to present key insights and findings.
+   -Summary reports and analytics are generated to facilitate decision-making and further analysis.
 
 ## Requirements
 - Python 3.x
@@ -51,10 +55,15 @@ The project is divided into two main parts:
    - Explore the data and visualize distributions and correlations.
    
 2. **Model Building and Evaluation:**
-   - Open `model_building.ipynb` in Jupyter Notebook or any compatible environment.
+    - Open `model_building.ipynb` in Jupyter Notebook or any compatible environment.
    - Execute the cells to build and evaluate the logistic regression model.
    - Adjust model parameters and threshold values as needed.
-
+     
+4. **Visualization with Power BI:**
+   - Open Power BI Desktop.
+   - Connect to the preprocessed dataset or import the CSV file generated from the preprocessing step.
+   - Design interactive visualizations to explore the Medicare claims data and detected fraud patterns.
+  
 ## Results
 - The Medicare Fraud Detection System achieves high performance with an Area Under ROC Curve of 1.0000 and an accuracy of 0.9984 on the test data.
 - The logistic regression model effectively identifies potentially fraudulent Medicare claims.
